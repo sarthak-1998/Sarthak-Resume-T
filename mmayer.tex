@@ -1,0 +1,152 @@
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+\usepackage{hyperref}
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.5cm,right=9cm,marginparwidth=6.9cm,marginparsep=1.0cm,top=1.15cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{gray}{0.005}
+\definecolor{LightGrey}{gray}{0.2}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Sarthak Jain}
+\tagline{Experiences in Industry, Consulting and Teaching}
+% Cropped to square from https://en.wikipedia.org/wiki/Marissa_Mayer#/media/File:Marissa_Mayer_May_2014_(cropped).jpg, CC-BY 2.0
+% \photo{3.3cm}{profile.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+    \email{\color{blue} \small sarthak.jain2404@gmail.com}
+    \phone{\small +91 7011189445}
+%  \mailaddress{Address, Street, 00000 County}
+    \location{\scriptsize New Delhi}
+%  \homepage{marissamayr.tumblr.com/}
+%  \twitter{@marissamayer}
+    \linkedin{\color{blue}\href{https://www.linkedin.com/in/sarthak-jain24apr98/}{\small sarthak-jain24apr98}}
+    \github{\color{blue}\href{https://github.com/sarthak-1998}{\small sarthak-1998}} % I'm just making this up though.
+%   \orcid{orcid.org/0000-0000-0000-0000} % Obviously making this up too. If you want to use this field (and also other academicons symbols), add "academicons" option to \documentclass{altacv}
+}
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Professional Experience}
+
+\cvevent{\color{blue}\href{https://codingblocks.com/team.html}Tester and Company Growth Strategist }{\color{blue}\href{https://codingblocks.com}{Coding Blocks}}{Nov2018-Ongoing}{Delhi, India}
+\begin{itemize}
+\item Spearheading the adoption of new methodology in Marketing to bring in real-time data monitoring, analytics,  trace-ability and achieve compliance. 
+\item Consistently tested CB Online App and made it 95\% crash free.
+\item Lead a team of 100 Campus Ambassadors present pan India in different Colleges and Universities to increase brand  awareness.
+
+\end{itemize}
+
+\cvevent{Web Developer Intern}{\color{blue}\href{https://allindiaradio.gov.in/}{All India Radio (AIR), Prasar Bharati}}{June2018-July2018 }{New Delhi, India}
+\begin{itemize}
+\item Maintained and Created a wonderful website to digitizes the Complaint filing System for the Government quarter residents. 
+\item Constantly updated and Monitored the company’s Database.
+
+\end{itemize}
+
+
+\cvevent{Social Media Manager}{\color{blue}\href{https://www.shopnani.com/}{ ShopNani }}{Dec2016-Jan2017 }{New Delhi, India}
+
+\begin{itemize}
+\item Wrote niche articles on latest prevailing Tech news for the website, Blog and social media accounts for daily postings.
+Evaluated different insights and Demographics. Handled the company’s online presence.
+ \item Monitored ongoing marketing campaigns
+Increased social media following and clicks by 200\%
+
+\end{itemize}
+\divider
+
+
+\cvsection{\large Achievements and Activities}
+
+\begin{itemize}
+    \item  \color{LightGrey} Speaker at \color{blue}G\color{red}o\color{yellow}o\color{blue}g\color{teal}l\color{red}e \color{LightGrey} I/O Extended 2019. 
+
+    \item Delivered seminars on Algorithms and Machine Learning at Nit Kurukshetra, LPU, Manipal University Jaipur etc. 
+    \end{itemize}
+
+\cvsection{\Large Education}
+\cvevent{\small{B.Tech - Computer Science }}
+{\small{Maharaja Agrasen Institute of Technology}}
+{ Jun 2016 -- May 2020 \hspace{1cm} CGPA: 7.26 }{}
+\cvevent{\small{Senior Secondary Education- 12th (CBSE)}}{\small{Kendriya Vidyalaya sector-8 Rohini, Delhi}}{2016 \hspace{1cm} Percentage: 90.2}{} 
+\cvevent{\small{Secondary Education-10th (CBSE)}}{\small{Kendriya Vidyalaya sector-8 Rohini, Delhi}}{
+2014 \hspace{1cm} CGPA: 10}{}
+
+\cvsection{\large Games Developed}
+
+\cvproject{\color{blue}\href{https://github.com/sarthak-1998/PhaserBootcampGame/}{Ultra Casual Space Shooter - \color{black}Phaser.js}}
+
+\cvproject{\color{blue}\href{https://github.com/sarthak-1998/Angry-Birds-Game}{Clone of Angry Birds - \color{black}Vanilla.JS, Box2D}}
+
+
+\cvproject{\color{blue}\href{https://github.com/sarthak-1998/Game-2048/}{Clone of 2048 - \color{black}Vanilla.JS}}
+
+\cvproject{\color{blue}\href{https://github.com/sarthak-1998/Snake-Game-GUI/}{Classic Snakes   - \color{black}Python}}
+
+\cvproject{\color{blue}\href{https://github.com/sarthak-1998/PingPong/}{Ping Pong - \color{black}Vanilla.JS}}
+
+
+
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+
+\end{document}
