@@ -1,5 +1,5 @@
 # AltaCV, yet another LaTeX CV/Résumé class
-
+![Alt text](Sarthak_Latex_CV- img.jpg?raw=true "Title")
 
 ## Samples
 
