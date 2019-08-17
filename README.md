@@ -1,6 +1,6 @@
 # AltaCV, yet another LaTeX CV/Résumé class
 
-![Alt text](assets/Sarthak_Latex_CV_img.jpg?raw=true "Title")
+![Alt text](assets/Sarthak_CV_img.jpg?raw=true "Title")
 ## Samples
 
 This is how the re-created résumé looks like ([view/open on Overleaf](https://www.overleaf.com/latex/examples/recreating-business-insiders-cv-of-marissa-mayer-using-altacv/gtqfpbwncfvp)):
